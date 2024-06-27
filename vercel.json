@@ -2,10 +2,6 @@
   "version": 2,
   "builds": [
     {
-      "src": "public/index.php",
-      "use": "@vercel/php"
-    },
-    {
       "src": "resources/js/**/*",
       "use": "@vercel/static-build",
       "config": {
@@ -20,7 +16,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "public/index.html"
+      "dest": "/public/index.html"
     }
   ]
 }
